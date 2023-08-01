@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="300dp"
+        android:text="TOTAL"
+        android:id="@+id/toolbut"
+        ></androidx.appcompat.widget.AppCompatButton>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Back"
+        android:id="@+id/toolback"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableLayout
+
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="#A4D3BF"
+
+        android:layout_marginTop="40dp"
+            android:layout_marginRight="8dp"
+            tools:context=".ResultActivity">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DC9A4B"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:padding="10dp"
+                    android:text="Date"
+                    android:textSize="14sp"
+                    android:layout_width="70dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:padding="10dp"
+                    android:text="Time"
+                    android:layout_width="70dp"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="0dp"
+                    android:padding="10dp"
+                    android:text="SetWeight"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_width="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="PourWeight"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_width="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="SetTime"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+
+                    android:id="@+id/pt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="PourTime"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Temperature"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Inaculant"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+
+                    android:id="@+id/mc"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="MouldCount"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="BadMould"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="ModelName"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="HeatCode"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>
